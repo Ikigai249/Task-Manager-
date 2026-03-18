@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow // Minimalist Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-card">
+        <header>
+            <h1>Task<span>Flow</span></h1>
+            <p id="dateDisplay"></p>
+        </header>
+
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new mission..." required autocomplete="off">
+            <button type="submit" id="add-btn">+</button>
+        </form>
+
+        <ul id="todo-list">
+            </ul>
+        
+        <div id="empty-state" class="hidden">All caught up! ☕</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
